@@ -10,6 +10,7 @@ function newGame(){
 
 function initialization() {
     pcNumber = Math.floor(Math.random() * 100 + 1)
+    console.log(pcNumber)
 }
 
 function compareNumbers() {
@@ -36,6 +37,10 @@ function compareNumbers() {
             document.getElementById("attempts").innerHTML = attemptsCounter
             document.getElementById("inputBox").setAttribute("Readonly", "Readonly")
             audio.play()
+            document.querySelector("main").style.backgroundImage = "url(img.jpg)"
+            document.querySelector("main").style.backgroundRepeat = "no-repeat"
+            document.querySelector("main").style.backgroundSize = "cover"
+            document.querySelector("main").style.color = "#fff";
         }
     }else{
         document.getElementById("textOutput").innerHTML = `You lose! The computer number was ${pcNumber}`
