@@ -2,6 +2,7 @@ let pcNumber
 let attempts = []
 attemptsCounter = 0
 maxguesses = 10
+audio = document.getElementById("acerto")
 
 function newGame(){
     window.location.reload()
